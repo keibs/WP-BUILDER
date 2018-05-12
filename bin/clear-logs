@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# == 0 ]; then
+    set -x
+    sudo rm -R ~/keibs_projects/wp-builder/logs/*
+    set +x
+else
+    for i in $@; do
+        set -x
+        sudo rm -R ~/keibs_projects/wp-builder/logs/$i-activity.log
+        set +x
+    done
+fi

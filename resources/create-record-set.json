@@ -1,0 +1,19 @@
+{
+    "Changes": 
+    [
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": 
+            {
+                "Name": "yourBusinessName.business.keibs.com",
+                "Type": "A",
+                "AliasTarget": 
+                {
+                    "HostedZoneId": "Z35SXDOTRQ7X7K",
+                    "DNSName": endpointDNSName,
+                    "EvaluateTargetHealth": false
+                }
+            }
+        }
+    ]
+}
